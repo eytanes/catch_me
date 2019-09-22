@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body >
+    <header >
+        <div class="toppage  bg-warning text-center border border-dark mb-4"   onclick="start()"  >
+            <h2 id="toppage" onmouseover="hoverTopPage()" onmouseout="catchMeText()">
+                catch me if you can
+            </h2>
+        </div>
+    </header>
+    <div class="game bg-dark container d-inline-block ml-2 mr-1 " onclick="wrongClick()"  >
+       <div  class="  rounded text-center" id="clicker" onmouseover="escape()"  onclick="points()" type="button" >Click Me</div> 
+    </div>
+    <div class= " d-inline-block size container bg-info ">
+        <div class="bg-white case "> <p > score: <br/><strong id="score" > 0</strong>
+        </div>  
+
+        
+        <div class="bg-white case">
+             click to next level: <br/> <strong id="nextLevel"> 10</strong>
+        </div>
+        <div class="bg-white case">
+             Level: <br/> <strong id="level">1</strong>
+       </div>
+        <div class="bg-white case" >
+             Miss Click: </br> <strong id="missClick" >0</strong>
+            </div>
+                <div class="bg-white case">
+                     Timer: </br> <strong id="time" class="mr-1">60</strong>
+            
+                    </div>
+                    <div class=" bg-white case ">
+                             Hight Score: <div id="id_high_scores" class="overflow-auto highscore "  ></div>
+                             <!-- Hight Score: <div class="overflow-auto highscore "  >   meir:15 points <br/> eytane:10 points <br/> gab:8 points <br/> jeremy:5 points<br/> ali:2 points</div> -->
+
+                    </div>
+                        </div> 
+    </div> 
+    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
