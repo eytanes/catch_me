@@ -176,7 +176,7 @@ highScore.pop();
    
         highScore.splice(0,0,{name:""+newHighScoreUser, score:point,
          highScoreDate:date.toLocaleDateString("fr",formats)});
-        console.log(date.toLocaleDateString("fr",formats));
+        
         
 
     }else if( point>highScore[1].score){
