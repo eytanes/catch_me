@@ -208,8 +208,6 @@ function displayNewHightScoreTable(){
    document.getElementsByClassName("highscore")[0].innerHTML = highScoreTable;
    localStorage.setItem("highScore",JSON.stringify(highScore));
 
-   //JSON.parse(localStorage.getItem("highScore"));
-   // localStorage.setItem("highScoreTable", JSON.stringify(highScoreTable));
-   // JSON.parse(localStorage.getItem("highScoreTable"));
+   
 }
     
